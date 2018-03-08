@@ -1,0 +1,72 @@
+.fo_body{
+    font-size:16rem/$base_size;
+}
+.fo_food_img{
+    height:200rem/$base_size;
+}
+.fo_info_wrap{
+    @include wh_bodersizing(100%,100rem/$base_size);
+    padding-top:12rem/$base_size;
+    margin-top:8rem/$base_size;
+    padding-left:24rem/$base_size;
+    background-color:$white;
+    .fo_info{
+        float:left;
+        @include wh_bodersizing(350rem/$base_size,88rem/$base_size);
+    }
+    h5{
+        line-height:28rem/$base_size;
+        font-size:20rem/$base_size;
+    }
+    p{
+        line-height:24rem/$base_size; 
+    }
+    .fo_price{
+        float:left;
+        text-align:right;
+        @include wh_bodersizing(80rem/$base_size,88rem/$base_size);
+        img{
+            margin-top:12rem/$base_size;
+        } 
+    }
+}
+.fo_number_link{
+    margin-top:8rem/$base_size;
+    padding-left:24rem/$base_size;
+    min-height:300rem/$base_size; 
+    background-color:$white;
+}
+.fo_food_intro h5,.fo_number_link h5{
+    line-height:46rem/$base_size; 
+    border-bottom:1px solid $border_color; 
+    font-size:20rem/$base_size;
+}
+.fo_food_intro{
+    margin-top:8rem/$base_size;
+    padding-left:24rem/$base_size;
+    background-color:$white;
+    p{
+        padding:10rem/$base_size 24rem/$base_size 10rem/$base_size 0; 
+        line-height:20rem/$base_size;
+    }
+}
+.fo_number{
+    padding-top:12rem/$base_size;
+}
+.fo_link_quantity{
+    display:inline-block;
+    vertical-align:top;
+    width:66rem/$base_size;
+    .fa{
+        margin-right:10rem/$base_size;
+        font-size:24rem/$base_size;
+    }
+    .font_orange{
+        margin-right:20rem/$base_size;
+        text-decoration:underline;
+    }
+}
+.fo_link_img{
+    display:inline-block;
+    width:370rem/$base_size;
+}

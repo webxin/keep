@@ -1,0 +1,47 @@
+.cob_time{
+    background-color:$dark_blue;
+    font-size:0;
+    div{
+        display:inline-block;
+        width:68rem/$base_size;
+        height:60rem/$base_size;
+        font-size:16rem/$base_size;
+        color:$white;
+        text-align:center;
+    }
+}
+.cob__info_wrap{
+    @include wh_bodersizing(100%,130rem/$base_size);
+    margin-top:8rem/$base_size;
+    background-color:$white;
+    .or_food_img{
+        float:left;
+        width:130rem/$base_size;
+        height:130rem/$base_size;
+        padding-right:12rem/$base_size;
+    }
+    .fo_info{
+        float:left;
+        @include wh_bodersizing(278rem/$base_size,130rem/$base_size);
+        padding-top:5rem/$base_size;
+        h5{
+            line-height:30rem/$base_size;
+            font-size:20rem/$base_size;
+        }
+        p{
+            line-height:24rem/$base_size;
+        }
+    }
+    .fo_price{
+        float:left;
+        @include wh_bodersizing(60rem/$base_size,130rem/$base_size);
+        line-height:130rem/$base_size;
+        text-align:center;
+    }
+    .bg_gray{
+        background-color:#919191;
+        color:$white;
+    }
+}
+
+

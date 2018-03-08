@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>支付页面</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">编辑资料</a>
+</header>
+<section class="or_store_wrap">
+    <h2>请选择支付方式</h2>
+    <div class="or_store_sort" id="payWay"><span class="or_sort_check" data-name="weixin">微信支付</span><span data-name="hanzhu">汗珠支付</span></div>
+</section>
+<section class="liststyle  pa_no_pay">
+    <span>普拉提</span><span class="font_orange">￥50.00</span><span class="font_orange">2016.06.20 18:00-20:00</span>
+</section>
+<section class="pa_handi_pay" id="handiPay">
+    <div>
+        <label for="tableNum">余额：</label>
+        <input  class="font_orange" type="text" id="tableNum" value="200颗"  />
+        <a href="./healthRecharge.html" class="pa_go_recharge">汗珠不足，去充值></a>
+    </div>
+    <div>
+        <label for="tableNum">消耗：</label>
+        <input class="font_orange"  type="text" id="tableNum" value="50颗" />
+    </div>
+    <div>
+        <label for="tableNum">剩余：</label>
+        <input  class="font_orange" type="text" id="tableNum" value="150颗" />
+    </div>
+</section>
+<button type="button" class="sh_go_count" id="payBtn">微信支付(共￥<span>98.00</span>元)</button>
+<section class="se_remark">
+    <p>【温馨提示】<p>
+    <p>本公众号消费，1颗汗珠价值等同于1元人民币悄悄告诉你，使用汗珠更优惠哦！</p> 
+</section>
+<script src="js/rem.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript">
+    var payBtn=$("#payBtn");
+    var handiPay=$("#handiPay");
+    handiPay.hide();
+    $("#payWay>span").tap(function(){
+        $("#payWay>span").removeClass("or_sort_check");
+        $(this).addClass("or_sort_check");    
+        if($(this).attr("data-name")==="weixin"){
+            payBtn.html("微信支付(共￥<span>98.00</span>元)");
+            handiPay.hide();
+        }else if($(this).attr("data-name")==="hanzhu"){
+            payBtn.html("汗珠支付(共<span>98.00</span>颗)");
+            handiPay.show();
+        } 
+    })
+    /*编辑资料是跳转到我的资料二级页面*/
+</script>
+</body>
+</html>

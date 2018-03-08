@@ -1,0 +1,76 @@
+
+.ke_re_body{
+    background-color: #3c5068;
+}
+.ke_re_wrap{
+    font-size:16rem/$base_size;
+    color:$white;
+    form{
+        padding-left:40rem/$base_size;  
+    }
+}
+.ke_re_photo_wrap{
+    box-sizing: border-box;
+    padding-top:20rem/$base_size;
+    height:232rem/$base_size;
+    text-align: center;
+    background-color: #2f4158;
+    .ke_re_photo{
+        margin:0 auto 20rem/$base_size;
+        padding-top: 40rem/$base_size;
+       @include wh_bodersizing(140rem/$base_size,140rem/$base_size); 
+       text-align: center;
+       background-color: #3c5068;
+       border-radius: 70rem/$base_size;
+    }
+    .fa{
+        display: block;
+        margin-bottom: 12rem/$base_size;
+        font-size: 34rem/$base_size;
+    }
+}
+.ke_re_info{
+    position: relative;
+    margin-top: 10rem/$base_size;
+    width: 400rem/$base_size;
+    .ke_re_icon{
+        position: absolute;
+        left:20rem/$base_size;
+        top:14rem/$base_size;
+        display:inline-block;
+        width: 40rem/$base_size;
+        height: 22rem/$base_size;
+        border-right: 2px solid $white;
+    }
+    .fa{
+        font-size:22rem/$base_size;
+    }
+    input {
+        @include wh_bodersizing(400rem/$base_size,50rem/$base_size);
+        padding-left: 78rem/$base_size;
+        background-color:#2f4158;
+        color:$white;
+        border-radius: 4px;
+        
+    }
+    .ke_re_code{
+        position:absolute;
+        right:14rem/$base_size;
+        top:50%;
+        margin-top:-8rem/$base_size;
+        color:$orange;
+    }
+}
+ .ke_re_confirm{
+    @include wh_bodersizing(400rem/$base_size,50rem/$base_size);
+    margin-top:50rem/$base_size; 
+    border-radius: none;
+    color:$white;
+    font-size:20rem/$base_size;
+    background-color:$orange;
+    letter-spacing: 10rem/$base_size;
+} 
+.wh_34{
+    display: inline-block;
+    width: 34rem/$base_size;
+}

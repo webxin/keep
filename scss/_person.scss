@@ -1,0 +1,134 @@
+/* after infofirst.html css style */
+
+.ke_infi_info{
+    box-sizing:border-box;
+    margin:10rem/$base_size 0  10rem/$base_size 30rem/$base_size;
+    padding:16rem/$base_size 48rem/$base_size 0 22rem/$base_size;
+    height:150rem/$base_size;
+    background:url("../images/in_bg.jpg") 0 0 repeat-y;
+}
+.ke_infi_headwrap{
+    float:left;
+    margin-right:60rem/$base_size;
+    @include wh_bodersizing(120rem/$base_size,120rem/$base_size);
+    padding:10rem/$base_size;
+    border-radius:60rem/$base_size;
+    background-color:$white;
+}
+.ke_infi_headpic{
+    width:100rem/$base_size;
+    height:100rem/$base_size;
+    border-radius:50rem/$base_size;
+}
+.ke_infi_detail{
+    float:left;
+    padding-top:20rem/$base_size;
+    width:200rem/$base_size;
+    height:120rem/$base_size;
+    line-height:40rem/$base_size;
+    font-size:20rem/$base_size;
+    color:$white;
+}
+
+.ke_infi_coupon{
+    width:100%;
+    height:100rem/$base_size;
+    background-color:$white;
+    .ke_infi_shopimg{
+        float:left;
+        width:100rem/$base_size;
+        height:100rem/$base_size;
+        margin-right:16rem/$base_size;
+    }
+    .ke_infi_codetail{
+        float:left;
+        padding-top:10rem/$base_size;   
+        width:272rem/$base_size; 
+        font-size:16rem/$base_size; 
+        h5{
+            font-size:20rem/$base_size; 
+            line-height:32rem/$base_size; 
+        }  
+        p{
+            line-height:24rem/$base_size; 
+        }
+        .ke_infi_time{
+            color:$orange;
+        }
+    }
+    .ke_infi_codeimg{
+        float:left;
+        padding-top:24rem/$base_size; 
+    }
+}
+/* after personinfo.html css style */
+.ke_pe_title{
+    margin-bottom:12rem/$base_size;
+    height:65rem/$base_size;
+    line-height:65rem/$base_size;
+    background-color:#2e74b4;
+    color:$white;
+    img{
+        margin:0 12rem/$base_size 0 22rem/$base_size;
+        width:50rem/$base_size;
+        height:50rem/$base_size;
+        vertical-align:middle;
+    }
+}
+.ke_pe_list{
+    ul:nth-child(1) li{
+        &:nth-child(1){
+            background:$white url("../images/pe_info.jpg") 32rem/$base_size center no-repeat;
+        }
+    }
+     ul:nth-child(2) li{
+        &:nth-child(1){
+            background:$white url("../images/pe_buycourse.jpg") 32rem/$base_size center no-repeat;
+        }
+        &:nth-child(2){
+            background:$white url("../images/pe_managecourse.jpg") 32rem/$base_size center no-repeat;
+        }
+    }
+     ul:nth-child(3) li{
+         &:nth-child(1){
+            background:$white url("../images/pe_health.jpg") 32rem/$base_size center no-repeat;
+        }
+        &:nth-child(2){
+            background:$white url("../images/pe_salehistroy.jpg") 32rem/$base_size center no-repeat;
+        }
+    }
+     ul:nth-child(4) li{
+         &:nth-child(1){
+            background:$white url("../images/pe_onlineorder.jpg") 32rem/$base_size center no-repeat;
+        }
+        &:nth-child(2){
+            background:$white url("../images/pe_order.jpg") 32rem/$base_size center no-repeat;
+        }
+    }
+    ul{
+        margin-bottom:18rem/$base_size;
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+    li{
+        margin-bottom:5rem/$base_size;
+        padding-left:84rem/$base_size;
+        @include wh_bodersizing(100%,60rem/$base_size);
+        line-height:60rem/$base_size;
+        &:last-child{
+            margin-bottom:0;
+        }
+        span{
+            display:inline-block;
+            box-sizing:border-box;
+            width:348rem/$base_size;
+        }
+    }
+   
+    .fa-caret-right{
+        font-size:20rem/$base_size;
+        color:#4ea5d5;
+    }
+
+}

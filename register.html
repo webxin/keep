@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="ke_re_body">
+<section class="ke_re_wrap">
+    <div class="ke_re_photo_wrap">
+        <div class="ke_re_photo">
+            <i class="fa fa-camera-retro"></i>
+            你的照片
+        </div>
+        上传本人头像<span class="wh_34"></span>尊享会员服务
+    </div>
+    <form id="loginForm" method="get" action="">
+        <div class="ke_re_info">
+            <span class="ke_re_icon"><i class="fa fa-user-o"></i></span>
+            <input type="text" placeholder="姓名" name="firstname">
+        </div>
+        <div class="ke_re_info">
+            <span class="ke_re_icon"><i class="fa fa-mobile"></i></span>
+            <input type="text" placeholder="手机号" name="phone" >
+        </div>
+        <div class="ke_re_info">
+            <span class="ke_re_icon"><i class="fa fa-link"></i></span>
+            <input type="text" placeholder="验证码">
+            <a href="#" class="ke_re_code">点击获取验证码</a>
+        </div>
+        <input type="submit" class="ke_re_confirm" value="确认">
+    </form>
+</section>
+<script src="js/rem.js"></script>
+<script  src="js/jquery-3.3.1.min.js"  type="text/javascript"></script>
+<script  src="js/jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$.validator.setDefaults({
+    submitHandler: function() {
+      alert("提交事件!");
+    }
+});
+$(function(){
+    $("#loginForm").validate({
+        rules:{
+            firstname:{
+                required:true,
+                maxlength:6
+            },
+            phone:{
+                required:true,
+                checkPhone:true
+            }
+        },
+        messages:{
+            firstname:{
+               required: "必填", 
+               maxlength:"长度小于6位"
+            },
+            phone:{
+                required:"必填"
+            }
+
+        }
+    });
+     $.validator.addMethod("checkPhone",function(value,element,params){  
+            var checkPhone = /^1[3,5,7,8]\d{9}$/;  
+            return this.optional(element)||(checkPhone.test(value));  
+    },"请输入正确的手机号码！");  
+});  
+
+/*
+上传图片到什么程度
+确认到那个页面
+点击验证码
+*/
+</script>
+</body>
+</html>

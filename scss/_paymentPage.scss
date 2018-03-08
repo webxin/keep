@@ -1,0 +1,42 @@
+.pa_no_pay{
+   padding-left:26rem/$base_size;
+  span{
+    display:inline-block;
+    &:nth-child(1){
+        width:130rem/$base_size;
+        font-size:20rem/$base_size;
+
+    }
+    &:nth-child(2){
+        width:120rem/$base_size; 
+        font-size:20rem/$base_size; 
+    }
+  }  
+}
+.pa_handi_pay{
+    margin-top:8rem/$base_size;
+    padding:23rem/$base_size 0 23rem/$base_size  54rem/$base_size; 
+    @include bg_color($white);
+    div{
+        margin-bottom:10rem/$base_size;    
+    }
+    div:last-child{
+        margin-bottom:0;       
+    }
+    label{
+        display:inline-block;
+        width:56rem/$base_size;    
+    }
+    input{
+        @include wh_bodersizing(320rem/$base_size,33rem/$base_size);
+        padding-left:15rem/$base_size;    
+        line-height:30rem/$base_size;    
+        border:1px solid $border_color;
+        border-radius:4px;
+    }
+    .pa_go_recharge{
+        display:inline-block;
+        margin-left:-160rem/$base_size; 
+        color:#2f74b4; 
+    }
+}

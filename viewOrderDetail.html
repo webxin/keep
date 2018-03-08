@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="vi_body">
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">我的脱呀 ></a>
+</header>
+<section class="vi_order_query">
+    <div class="vi_food_way_wrap">
+        <h2>取餐方式</h2>
+        <div class="vi_food_way"  id="FoodWay">
+            <span class="span_check">店内</span><span>打包</span><span>外送</span>
+        </div>
+    </div>
+    <div class="vi_table_number">
+        <label for="tableNum">桌牌号码</label>
+        <input id="tableNum"  value="18"  type="text"/>
+    </div>
+    <div class="vi_order_state">
+        <label>订单状态</label>
+        <input type="text" id="orderState" value="美食制作中…" readonly>
+    </div>
+    <div class="vi_remark_call">
+        如有问题请垂询店内客服电话：010-8888888
+    </div>
+</section>
+<script src="js/rem.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script type="text/javascript">
+$('#FoodWay>span').tap(function(){
+    $('#FoodWay>span').removeClass("span_check");
+    $(this).addClass("span_check");
+})
+$("#tableNum").blur(function(){
+    alert($(".span_check").text());
+    alert($(this).val());
+})
+</script>
+</body>
+</html>

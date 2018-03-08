@@ -1,0 +1,26 @@
+.ex_body{
+    @include bg_color($white);
+}
+.ex_info_wrap{
+    box-sizing:border-box;
+    margin-left:22rem/$base_size;
+    padding-top:12rem/$base_size;
+    height:100rem/$base_size;
+    border-bottom:1px solid $border_color;
+    .fo_info{
+        float:left;
+        width:340rem/$base_size;
+        h2{
+            font-size:20rem/$base_size;  
+            line-height:28rem/$base_size;  
+        }
+        p{
+            line-height:24rem/$base_size;
+        }
+    }
+    .fo_price{
+        float:left;
+        width:100rem/$base_size;
+        padding-top:30rem/$base_size;
+    }
+}

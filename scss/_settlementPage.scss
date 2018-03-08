@@ -1,0 +1,13 @@
+.se_pay_way{
+    line-height:44rem/$base_size;
+    background-color:$white;
+    span{
+        display:inline-block;
+        width:240rem/$base_size;
+        text-align:center;
+    }
+}
+.se_remark{
+    margin-top:20rem/$base_size;
+    text-align:center;
+}

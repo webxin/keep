@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>课程购买</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">编辑资料</a>
+</header>
+<section class="or_store_wrap">
+    <h2>脱呀轻健身北京国贸店</h2>
+    <div class="cob_time" id="time">
+        <div class="bg_orange"><span>五</span><br /><span>13</span></div>
+        <div><span>六</span><br /><span>14</span></div>
+        <div><span>日</span><br /><span>15</span></div>
+        <div><span>一</span><br /><span>16</span></div>
+        <div><span>二</span><br /><span>17</span></div>
+        <div><span>三</span><br /><span>18</span></div>
+        <div><span>四</span><br /><span>19</span></div>
+    </div>
+</section>
+<section class="cob__info_wrap">
+    <img src="images/or_food.jpg" class="or_food_img" />
+    <div class="fo_info">
+        <h5>普拉提    ￥50.00</h5>
+        <p>教练：Ric</p>
+        <p>简介：简介简介简介简介简介</p>
+        <p>消耗热量：700卡</p>
+        <p class="font_orange">时间：18:00-20:00</p>
+    </div>
+    <div class="fo_price bg_orange">
+       <a href="./buyDetail.html">购买</a>
+    </div>
+</section>
+<section class="cob__info_wrap">
+    <img src="images/or_food.jpg" class="or_food_img" />
+    <div class="fo_info">
+        <h5>普拉提    ￥50.00</h5>
+        <p>教练：Ric</p>
+        <p>简介：简介简介简介简介简介</p>
+        <p>消耗热量：700卡</p>
+        <p>时间：18:00-20:00</p>
+    </div>
+    <div class="fo_price bg_gray">
+       售完
+    </div>
+</section>
+<script src="js/rem.js"></script>
+<script  src="js/zepto.min.js"></script>
+<script  src="js/touch.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">
+    $("#time>div").click(function(){
+       selectStyle($("#time>div"),$(this),"bg_orange");
+    })
+    /*
+    日历动态添加吗
+    购买跳转到位置？
+    */
+</script>
+</body>
+</html>

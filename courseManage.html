@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>课程管理</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="fo_body">
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">我的脱呀 ></a>
+</header>
+<div class="com_shuxing" id="shuxing"><span class="bg_orange">已购买</span><span>已完成</span></div>
+<section class="com_info_wrap">
+    <img src="images/or_food.jpg" class="or_food_img" />
+    <div class="fo_info">
+        <h5>普拉提 <span class="com_absent">已旷课</span></h5>
+        <p>教练：Ric</p>
+        <p>时间：2016.06.20 18:00-20:00</p>
+    </div>
+    <div class="fo_price">
+        <img src="images/in_code.jpg"/>
+    </div>
+</section>
+<div><button type="button" class="com_like_btn">赞一下</button></div>
+<div><button type="button" class="com_did_like">已点赞</button></div>
+<script src="js/rem.js"></script>
+<script  src="js/zepto.min.js"></script>
+<script  src="js/touch.js"></script>
+<script src="js/common.js"></script>
+<script  type="text/javascript">
+    $("#shuxing>span").tap(function(){
+        selectStyle($("#shuxing>span"),$(this),"bg_orange");
+    })
+    /*
+        赞一下和已点赞用途
+    */
+</script>
+</body>
+</html>

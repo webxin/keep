@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>订单列表</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">编辑资料</a>
+</header>
+<section class="or_store_wrap">
+    <h2>脱呀轻健身北京国贸店</h2>
+    <div class="or_store_sort" id="storeSort"><span class="or_sort_check">食品</span><span>饮料</span></div>
+</section>
+<section class="or_info_wrap">
+    <img src="images/or_food.jpg" class="or_food_img" />
+    <div class="fo_info">
+        <h5>意大利面</h5>
+        <p>秘制香料，回味无穷！</p>
+        <p>
+            <i class="fa fa-thumbs-o-up"></i><span>8</span>
+        </p>
+    </div>
+    <div class="fo_price">
+        <p class="font_orange">￥88.00</p>
+        <img src="images/fo_add.jpg" />
+    </div>
+</section>
+<footer>
+    <i class="fa fa-shopping-cart"></i><span class="fo_price">￥88.00 | 共1份餐饮</span><button type="button">确认订餐</button>
+</footer>
+<script src="js/rem.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/common.js"></script>
+<script>
+$("#storeSort>span").tap(function(){
+  selectStyle($("#storeSort>span"),$(this),"or_sort_check");  
+})
+/*
+订餐列表是所有商品信息吗
+位置需要定位吗
+所有数据请求来的，默认是一份吗
+*/
+</script>
+</body>
+</html>

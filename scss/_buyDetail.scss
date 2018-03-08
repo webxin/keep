@@ -1,0 +1,28 @@
+.bu_info_wrap{
+    padding:10rem/$base_size 0 0 26rem/$base_size;
+    height:120rem/$base_size;
+    @include bg_color($white);
+    .fo_info{
+        float:left;
+        width:334rem/$base_size;
+        h2{
+            font-size:20rem/$base_size;  
+            line-height:28rem/$base_size;  
+        }
+        p{
+            line-height:24rem/$base_size;
+        }
+    }
+    .fo_price{
+        float:left;
+        width:100rem/$base_size;
+        padding-top:38rem/$base_size;
+        button{
+            width:100rem/$base_size;
+            line-height:40rem/$base_size;
+            background-color:$orange;
+            color:$white;
+            border-radius:4px;
+        }
+    }
+}

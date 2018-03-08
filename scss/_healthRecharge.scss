@@ -1,0 +1,61 @@
+.he_sweat_wrap{
+    padding:0 38rem/$base_size 0 28rem/$base_size;
+    background-color:$light_blue;
+    line-height:64rem/$base_size;
+    color:$white;
+    img{
+        width:40rem/$base_size;
+        height:40rem/$base_size;
+        vertical-align:middle;
+    }
+    .he_sweat_num{
+        display:inline-block;
+        box-sizing:border-box;
+        width:270rem/$base_size;
+        padding-left:16rem/$base_size;
+    }
+}
+.he_infi_coupon{
+    width:100%;
+    height:100rem/$base_size;
+    background-color:$white;
+    .ke_infi_shopimg{
+        float:left;
+        width:100rem/$base_size;
+        height:100rem/$base_size;
+        margin-right:16rem/$base_size;
+    }
+    .ke_infi_codetail{
+        float:left;
+        padding-top:10rem/$base_size;   
+        width:240rem/$base_size; 
+        font-size:16rem/$base_size; 
+        h5{
+            font-size:20rem/$base_size; 
+            line-height:32rem/$base_size; 
+        }  
+        p{
+            line-height:24rem/$base_size; 
+        }
+        .ke_infi_time{
+            color:$orange;
+        }
+    }
+    .he_buy_now{
+        float:left;
+        padding-top:30rem/$base_size;
+        width:100rem/$base_size;
+    } 
+    .he_buy_now_btn{
+       @include btn(100rem/$base_size,40rem/$base_size,4rem/$base_size);
+    } 
+}
+
+.se_remark{
+    margin:28rem/$base_size 74rem/$base_size 0;
+    text-align:center;
+    p:nth-child(1){
+        font-size:20rem/$base_size;
+        line-height:48rem/$base_size;
+    }
+}

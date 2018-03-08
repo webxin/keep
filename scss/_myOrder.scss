@@ -1,0 +1,32 @@
+.myo_info_wrap{
+    @include wh_bodersizing(100%,80rem/$base_size);
+    margin-top:8rem/$base_size;
+    background-color:$white;
+    .fo_info{
+        float:left;
+        @include wh_bodersizing(260rem/$base_size,80rem/$base_size);
+        padding-left:20rem/$base_size;
+        h5{
+            width:240rem/$base_size;
+            line-height:48rem/$base_size;
+            font-size:20rem/$base_size;
+            span:nth-child(1){
+                float:left;
+            }
+            span:nth-child(2){
+               float:right;
+            }
+        }
+        p{
+            clear:both;
+            text-align:right;
+            color:#717171;
+            font-size:16rem/$base_size;
+        }
+    }
+    .fo_price{
+        float:left;
+        margin-left:100rem/$base_size;
+        line-height:80rem/$base_size;
+    }
+}

@@ -1,0 +1,53 @@
+.vi_body{
+    font-size:16rem/$base_size;
+}
+.vi_food_way_wrap{
+    h2{
+        padding-left:24rem/$base_size;
+        line-height:40rem/$base_size;
+        font-size:16rem/$base_size;
+    }
+}
+ .vi_food_way{
+    line-height:44rem/$base_size;
+    background-color:$white;
+    span{
+        display:inline-block;
+        width:160rem/$base_size;
+        text-align:center;
+    }
+    .span_check{
+        background-color:#9d9d9d;
+        color:$white;
+    }
+}
+.vi_table_number,.vi_order_state{
+    margin-top:8rem/$base_size;
+    background-color:$white;
+    line-height:60rem/$base_size;
+    font-size:16rem/$base_size;
+    label{
+        display:inline-block;
+        width:160rem/$base_size;
+        text-align:center;
+    }
+    input{
+        box-sizing:border-box;
+        padding:0 0 0 14rem/$base_size;
+        color:#a9a9a9;
+    }
+}
+.vi_table_number{
+    input{
+       width:300rem/$base_size;
+       line-height:38rem/$base_size;
+       border:1px solid #a9a9a9;
+       border-radius:4px;
+       box-shadow:none;
+    }
+}
+.vi_remark_call{
+    font-size:16rem/$base_size;
+    text-align:center;
+    line-height:64rem/$base_size;
+}

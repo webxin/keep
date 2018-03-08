@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购物车</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">我的脱呀 ></a>
+</header>
+<section class="sh_shopcar_wrap">
+        <h2 class="titleh2">购物车</h2>
+        <div id="goodList"></div>
+        <button type="button" class="sh_go_count" id="goCalculate">去结算(共￥<span>98.00</span>元)</button>
+    </section>
+<script src="js/rem.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/ejs.js"></script>
+<script type="text/template" id="shop"> 
+    <%for(var i=0;i<data.length;i++){ %>
+    <div class="liststyle">
+        <span><%= data[i].name %></span><span class="error">￥<%= data[i].price %></span><span><i class="fa fa-minus-circle"></i><span data-price="<%= data[i].price %>"  class="sh_num"><%= data[i].number %></span><i class="fa fa-plus-circle"></i>
+        </span> 
+    </div>
+    <% } %>
+</script>
+<script type="text/javascript">
+var shop=document.getElementById("shop").innerHTML;
+var html=ejs.render(shop,{data:[{"name":"意大利面","price":"88.20","number":"8"},{"name":"意大利面","price":"60.50","number":"6"}]});
+document.getElementById("goodList").innerHTML=html;
+$(".fa-minus-circle").tap(function(){
+    var cur=Number($(this).next().text());
+    if(cur==1){
+        $(this).parents(".liststyle").remove();
+    }else{
+        --cur;    
+    }
+    $(this).next().text(cur);
+    calculateTotal();
+});
+$(".fa-plus-circle").tap(function(){
+    var cur=Number($(this).prev().text());
+    ++cur;    
+    $(this).prev().text(cur);
+    calculateTotal();
+});
+
+function calculateTotal(){
+    var shnum=$(".sh_num");
+    var count=0;
+    for(var i=0;i<shnum.length;i++){
+        count+=Number($(shnum[i]).text())*Number($(shnum[i]).attr("data-price"));
+    }
+    
+    $("#goCalculate>span").text(count.toFixed(2));
+}
+
+/*
+数量有范围限制吗
+最小值是多少？如果为0，此条删除吗？
+*/   
+
+</script>
+</body>
+</html>

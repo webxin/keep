@@ -1,0 +1,59 @@
+.com_shuxing{
+    line-height:45rem/$base_size;
+    @include bg_color($white);
+    span{
+        display:inline-block;
+        width:50%;
+        text-align:center;
+    }
+}
+.com_info_wrap{
+    @include wh_bodersizing(100%,100rem/$base_size);
+    margin-top:8rem/$base_size;
+    background-color:$white;
+    .or_food_img{
+        float:left;
+        width:100rem/$base_size;
+        height:100rem/$base_size;
+        padding-right:16rem/$base_size;
+    }
+    .fo_info{
+        float:left;
+        @include wh_bodersizing(272rem/$base_size,100rem/$base_size);
+        padding-top:5rem/$base_size;
+        h5{
+            line-height:30rem/$base_size;
+            font-size:20rem/$base_size;
+        }
+        p{
+            &:first-child(1){
+                line-height:26rem/$base_size; 
+            }
+             &:first-child(2){
+                font-size:14rem/$base_size; 
+                line-height:24rem/$base_size; 
+            }
+        }
+    }
+    .fo_price{
+        float:left;
+        @include wh_bodersizing(90rem/$base_size,100rem/$base_size);
+        img{
+            margin-top:25rem/$base_size;
+            width:50rem/$base_size;
+            height:50rem/$base_size;
+        } 
+    }
+    .com_absent{
+        display:inline-block;
+        @include btn(54rem/$base_size,20rem/$base_size,0px);    
+        font-size:14rem/$base_size;
+    }
+}
+.com_like_btn{
+    @include btn(100rem/$base_size,40rem/$base_size,4px);
+}
+.com_did_like{
+    @include btn(100rem/$base_size,40rem/$base_size,4px);
+    background-color: #9b9b9b;  
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="fo_body">
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">我的脱呀 ></a>
+</header>
+<img src="images/fo_food.jpg" class="fo_food_img"/>
+<section class="fo_info_wrap">
+    <div class="fo_info">
+        <h5>意大利面</h5>
+        <p>秘制香料，回味无穷！</p>
+        <p class="font_orange">卡路里：640卡</p>
+    </div>
+    <div class="fo_price">
+        <p class="font_orange">￥<span id="singlePrice">88.00</span></p>
+        <img src="images/fo_add.jpg" id="addNum"/>
+    </div>
+</section>
+<section class="fo_food_intro">
+    <h5>餐食简介</h5>
+    <p>秘制香料，回味无穷秘制香料，回味无穷秘制香料，回味无穷秘制香料，回味无穷秘制香料，回味无穷秘制香料</p>
+</section>
+<section class="fo_number_link">
+    <h5>会员点赞</h5>
+    <div class="fo_number"> 
+        <div class="fo_link_quantity">
+            <i class="fa fa-thumbs-o-up"></i>
+            <span class="font_orange">8</span>
+        </div>
+        <div class="fo_link_img">
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+            <img src="images/fo_icon.jpg"  />
+        </div>
+    </div>
+</section>
+<footer>
+    <i class="fa fa-shopping-cart"></i><span class="fo_price">￥<span id="countPrice">88.00</span> | 共<span id="num">1</span>份餐饮</span><button type="button">确认订餐</button>
+</footer>
+<script src="js/rem.js"></script>
+<script  src="js/zepto.min.js"></script>
+<script  src="js/touch.js"></script>
+<script type="text/javascript">
+
+    $("#addNum").click(function(){
+        var cur=Number($("#num").text());
+        var singlePrice=Number($("#singlePrice").text());
+        var next=++cur;
+        var count=singlePrice*next;
+        $("#num").html(next);
+        $("#countPrice").html(count);
+    })
+</script>
+</body>
+</html>

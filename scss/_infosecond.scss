@@ -1,0 +1,29 @@
+.ins_wrap{
+    @include wh_bodersizing(450rem/$base_size,142rem/$base_size);
+    margin-top:16rem/$base_size;
+    background:linear-gradient(to right,#779f30,#bac453);
+    color:$white;
+    .fo_info{
+        float:left;
+        @include wh_bodersizing(314rem/$base_size,142rem/$base_size);
+        padding-top:18rem/$base_size;
+        padding-left:30rem/$base_size;
+        h5{
+            line-height:26rem/$base_size;
+            font-size:20rem/$base_size;
+        }
+        p{
+            line-height:28rem/$base_size;
+        }
+    }
+    .fo_price{
+        float:left;
+        img{
+            margin-top:12rem/$base_size;
+            width:118rem/$base_size;
+            height:118rem/$base_size;
+        }
+    }
+}
+
+

@@ -1,0 +1,22 @@
+.sh_shopcar_wrap{
+    .liststyle>span{
+        display:inline-block;
+        width:160rem/$base_size;
+        text-align:center;
+    }
+    .sh_num{
+        display:inline-block;
+        width:36rem/$base_size;
+        text-align:center;
+    }
+    .fa{
+        vertical-align:middle;
+        color:$dark_blue;
+        font-size:30rem/$base_size;
+    }
+}
+
+.sh_go_count{
+    margin:30rem/$base_size 0 0 40rem/$base_size;
+    @include btn(400rem/$base_size,50rem/$base_size,4px);
+}

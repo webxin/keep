@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header class="ke_infi_title">
+    <img src="images/pe_logo.jpg" /><h1>练就一身五花肉</h1><a href="infosecond.html">我的脱呀 ></a>
+</header>
+<section>
+    <h2 class="titleh2">确认订单</h2>
+    <div class="vi_food_way_wrap">
+        <h2>请选择取餐方式</h2>
+        <div class="vi_food_way" id="takeFoodWay">
+            <span class="bg_orange">店内</span><span>打包</span><span>外送</span>
+        </div>
+    </div>
+    <div class="vi_table_number">
+        <label for="tableNum">请填写桌牌号码</label>
+        <input type="text" id="tableNum">
+    </div>
+    <div class="vi_food_way_wrap">
+        <h2>请选择支付方式</h2>
+        <div class="se_pay_way" id="payWay">
+            <span class="bg_orange">微信支付</span><span>汗珠支付</span>
+        </div>
+    </div>
+    <button type="button" class="sh_go_count">微信支付(共￥<span>98.00</span>元)</button>
+    <div class="se_remark">
+       <p>订单不可取消<p>
+       <p>如需发票可向吧台索取</p> 
+    </div>
+</section>
+<script src="js/rem.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/common.js"></script>
+<script>
+$('#takeFoodWay>span').tap(function(){
+    selectStyle($('#takeFoodWay>span'),$(this),"bg_orange");
+})
+$('#payWay>span').tap(function(){
+    selectStyle($('#payWay>span'),$(this),"bg_orange");
+})
+
+</script>
+</body>
+</html>
